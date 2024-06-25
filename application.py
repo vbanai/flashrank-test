@@ -40,7 +40,7 @@ df_existing_customer, passages, catalogue=data_preparation()
 @application.route('/')
 def index():
    start_time = time.process_time()
-   query = request.args.get('query', 'zongora kapható?')
+   query = request.args.get('query', 'gitár kapható?')
    rerankrequest = RerankRequest(query=query, passages=passages)
    results = ranker.rerank(rerankrequest)[:3]
    end_time = time.process_time()
