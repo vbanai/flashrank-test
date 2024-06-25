@@ -8,7 +8,7 @@ ranker = Ranker()
 #ranker = Ranker(model_name="ms-marco-MiniLM-L-12-v2", cache_dir="/opt")
 
 df_existing_customer, passages, catalogue=data_preparation()
-
+#dfg
 # passages = [
 #    {
 #       "id": 1,
@@ -50,4 +50,4 @@ def index():
 
 if __name__ == '__main__':
     #application.run(debug=True)
-    application.run(host='0.0.0.0', port=8000, debug=True)
+    application.run(host='0.0.0.0', port=8000)
